@@ -21,6 +21,10 @@
         <li role="presentation"><a href="#Q3" aria-controls="messages" role="tab" data-toggle="tab">Question 3</a></li>
         <li role="presentation"><a href="#Q4" aria-controls="settings" role="tab" data-toggle="tab">Question 4</a></li>
         <li role="presentation"><a href="#Q5" aria-controls="settings" role="tab" data-toggle="tab">Question 5</a></li>
+        <li role="presentation"><a href="#Q6" aria-controls="settings" role="tab" data-toggle="tab">Question 6</a></li>
+        <li role="presentation"><a href="#Q7" aria-controls="settings" role="tab" data-toggle="tab">Question 7</a></li>
+        <li role="presentation"><a href="#Q8" aria-controls="settings" role="tab" data-toggle="tab">Question 8</a></li>
+        <li role="presentation"><a href="#Q9" aria-controls="settings" role="tab" data-toggle="tab">Question 9</a></li>
       </ul>
       <!-- Tab panes -->
       <div class="tab-content">
@@ -99,30 +103,30 @@
             <div class="col-md-12">
               <pre>
                 function chessBoard() {
-                var size = prompt("Please enter a number to create a length.");
-                var line = '';
-                var print = "";
-                var i = 0;
+                  var size = prompt("Please enter a number to create a length.");
+                  var line = '';
+                  var print = "";
+                  var i = 0;
 
-                for (i = 0; i < size / 2; i++) {
-                  line = print + line + '# ';
-                }
-
-                for (i = 0; i < size; i++) {
-                  if (i % 2 === 0) {
-                    print = print + (' ' + line) + "<!--<br/-->";
-                  } else {
-                    print = print + (line) + "<!--<br/-->";
+                  for (i = 0; i < size / 2; i++) {
+                    line = print + line + '# ';
                   }
+
+                  for (i = 0; i < size; i++) {
+                    if (i % 2 === 0) {
+                      print = print + (' ' + line) + <!--"<br/>"-->;
+                    } else {
+                      print = print + (line) + <!--"<br/>"-->;
+                    }
+                  }
+                  $("#q3result").html(print);
                 }
-                $("#q3result").html(print);
-              }
 
 
-              $("#q3button").on("click", function() {
+                $("#q3button").on("click", function() {
 
-                chessBoard();
-              });
+                  chessBoard();
+                });
                 </pre>
             </div>
             <div class="col-md-12">
@@ -140,23 +144,23 @@
             <div class="col-md-12">
               <pre>
                 function countBs(bString) {
-                        var count = 0;
-                        for (var i = 0; i < bString.length; i++) {
-                          if (bString.charAt(i) == 'B') {
-                            count = (count + 1);
-                          }
-                        }
-                        return count;
-                      }
+                  var count = 0;
+                  for (var i = 0; i < bString.length; i++) {
+                    if (bString.charAt(i) == 'r') {
+                      count = (count + 1);
+                    }
+                  }
+                  return count;
+                }
 
 
-                      $("#q4button").on("click", function() {
+                $("#q4button").on("click", function() {
 
-                        var userInput = prompt("Write several -B- and I will tell you how many there are.");
-                        var x = countBs(userInput);
+                  var userInput = prompt("Write a sentance containing the letter 'r' and I will count how many there are.");
+                  var x = countBs(userInput);
 
-                        $("#q4result").html(x);
-                      });
+                  $("#q4result").html(x);
+                });
                 </pre>
             </div>
             <div class="col-md-12">
@@ -183,8 +187,8 @@
                 }
                 $("#q5button").on("click", function() {
 
-                  var inputOne = prompt("Write a sentence.");
-                  var inputTwo = prompt("What letter would you like me to count?")
+                  var inputOne = prompt("Write a sentance.");
+                  var inputTwo = prompt("Tell me a letter to count.")
 
                   var t = countChar(inputOne, inputTwo)
                   $("#q5result").html(t);
@@ -196,6 +200,127 @@
             </div>
             <div class="col-md-12">
               <div id="q5result"></div>
+            </div>
+          </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="Q6">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                function range(start, end) {
+                  var arr = [];
+                  if(start <= end){
+                    //this is where we establish that the numbers in the range will increase by 1
+                    //and start at the start number (2) and end at the end number (6)
+                  for( start; start <= end; start++){
+                    arr.push(start);
+                  }
+            }
+                  return arr;
+                }
+
+                $("#q6button").on("click", function() {
+                  //here we determine what the range will be
+                  var rangeAnswer = range(2,6);
+                  //here the html will join all the range numbers so it will look like this:
+                  //2,3,4,5,6
+                  $("#q6result").html("The answer is " + rangeAnswer.join());
+                });
+                </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="q6button" class="btn btn-default" type="button">Button</button>
+            </div>
+            <div class="col-md-12">
+              <div id="q6result"></div>
+            </div>
+          </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="Q7">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                var sum = function(arr) {
+                  var sumVar = 0;
+
+                  for (var i = 0; i < arr.length; i++){
+
+                    sumVar = sumVar + arr[i];
+                }
+                  return sumVar;
+                }
+
+                $("#q7button").on("click", function() {
+
+                  var sumVar = sum(range(1,10));
+
+
+                  $("#q7result").html("The sum of the numbers is " + sumVar);
+                });
+                </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="q7button" class="btn btn-default" type="button">Button</button>
+            </div>
+            <div class="col-md-12">
+              <div id="q7result"></div>
+            </div>
+          </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="Q8">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                        function reverseArray(array) {
+                          var output = [];
+                          for (var i = array.length - 1; i >= 0; i--){
+                            output.push(array[i]);
+                        }
+                        return output;
+                      }
+
+                        $("#q8button").on("click", function() {
+                          var output = reverseArray(["A", "B", "C", "D","E"]);
+                          $("#q8result").html("The reverse is: " + output);
+                    });
+                </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="q8button" class="btn btn-default" type="button">Button</button>
+            </div>
+            <div class="col-md-12">
+              <div id="q8result"></div>
+            </div>
+          </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="Q9">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                function reverseArrayInPlace(array) {
+                for (var i = 0; i < Math.floor(array.length / 2); i++) {
+                var old = array[i];
+                array[i] = array[array.length - 1 - i];
+                array[array.length - 1 - i] = old;
+                }
+                return array;
+                }
+
+                $("#q9button").on("click", function() {
+                var old = reverseArrayInPlace(["A","B", "C", "D", "E"]);
+                $("#q9result").html("The reverse is: " + old);
+                  });
+                </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="q9button" class="btn btn-default" type="button">Button</button>
+            </div>
+            <div class="col-md-12">
+              <div id="q9result"></div>
             </div>
           </div>
         </div>
@@ -224,16 +349,16 @@
 
         });
 
-        function multiply() {
+        function multiples() {
           var str = ""
           for (var i = 1; i <= 100; i += 1) {
-            if (i % 3 === 0 && i % 5 === 0) { //if i goes into 3 and 5 evenly
+            if (i % 3 === 0 && i % 5 === 0) { //if i is a multiple of 3 and 5
               str = str + "FooBar" + "<br>";
-            } else if (i % 3 === 0) { //if i is evenly divisible by 3
+            } else if (i % 3 === 0) { //if i is a multiple of 3
               str = str + "Foo" + "<br>";
-            } else if (i % 5 === 0) { //if i is evenly divisible by 5
+            } else if (i % 5 === 0) { //if i is a multiple of 5
               str = str + "Bar" + "<br>";
-            } else { //if not print out the number
+            } else { //if none of the abve conditions are met, print out the number
               str = str + i + "<br>"
             }
             $("#q2result").html(str);
@@ -241,7 +366,7 @@
         }
 
         $("#q2button").on("click", function() {
-          multiply();
+          multiples();
         });
 
         function chessBoard() {
@@ -273,7 +398,7 @@
         function countBs(bString) {
           var count = 0;
           for (var i = 0; i < bString.length; i++) {
-            if (bString.charAt(i) == 'B') {
+            if (bString.charAt(i) == 'r') {
               count = (count + 1);
             }
           }
@@ -283,7 +408,7 @@
 
         $("#q4button").on("click", function() {
 
-          var userInput = prompt("Write several -B- and I will tell you how many there are.");
+          var userInput = prompt("Write a sentance containing the letter 'r' and I will count how many there are.");
           var x = countBs(userInput);
 
           $("#q4result").html(x);
@@ -300,13 +425,77 @@
         }
         $("#q5button").on("click", function() {
 
-          var inputOne = prompt("Write a sentence.");
-          var inputTwo = prompt("What letter would you like me to count?")
+          var inputOne = prompt("Write a sentance.");
+          var inputTwo = prompt("Tell me a letter to count.")
 
           var t = countChar(inputOne, inputTwo)
           $("#q5result").html(t);
         });
 
+        function range(start, end) {
+          var arr = [];
+          if (start <= end) {
+            //this is where we establish that the numbers in the range will increase by 1
+            //and start at the start number (2) and end at the end number (6)
+            for (start; start <= end; start++) {
+              arr.push(start);
+            }
+          }
+          return arr;
+        }
+
+        $("#q6button").on("click", function() {
+          //here we determine what the range will be
+          var rangeAnswer = range(2, 6);
+          //here the html will join all the range numbers so it will look like this:
+          //2,3,4,5,6
+          $("#q6result").html("The answer is " + rangeAnswer.join());
+        });
+
+        var sum = function(arr) {
+          var sumVar = 0;
+
+          for (var i = 0; i < arr.length; i++) {
+
+            sumVar = sumVar + arr[i];
+          }
+          return sumVar;
+        }
+
+        $("#q7button").on("click", function() {
+
+          var sumVar = sum(range(1, 10));
+
+
+          $("#q7result").html("The sum of the numbers is " + sumVar);
+        });
+
+        function reverseArray(array) {
+          var output = [];
+          for (var i = array.length - 1; i >= 0; i--) {
+            output.push(array[i]);
+          }
+          return output;
+        }
+
+        $("#q8button").on("click", function() {
+          var output = reverseArray(["A", "B", "C", "D", "E"]);
+          $("#q8result").html("The reverse is: " + output);
+        });
+
+        function reverseArrayInPlace(array) {
+          for (var i = 0; i < Math.floor(array.length / 2); i++) {
+            var old = array[i];
+            array[i] = array[array.length - 1 - i];
+            array[array.length - 1 - i] = old;
+          }
+          return array;
+        }
+
+        $("#q9button").on("click", function() {
+          var old = reverseArrayInPlace(["A", "B", "C", "D", "E"]);
+          $("#q9result").html("The reverse is: " + old);
+        });
       });
     </script>
 </body>
