@@ -10,11 +10,11 @@ $(document).ready(function() {
 
   $("#myButton").on("mouseenter", function() {
     $("#log").append("<br> Mouse Enter")
-      $(this).text("Order Now");
+      $(this).text("Order Placed");
     })
     .on("mouseleave", function() {
         $("#log").append("<br> Mouse Leave")
-      $(this).text("Order Placed");
+      $(this).text("Order Now");
 
     });
 
