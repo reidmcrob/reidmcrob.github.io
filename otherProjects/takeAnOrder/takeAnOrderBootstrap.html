@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF­8">
+
+  <title>Take An Order Bootstrap HTML</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <input type="text" class="form-control" placeholder="First and Last Name">
+      </div>
+
+      <br>
+      <br>
+
+      <div class="col-md-12">
+        <textarea class="form-control" rows="3" cols="50">Order Specifications</textarea>
+      </div>
+
+      <div class="col-md-12">
+        <select class="form-control">
+          <option>Fruits</option>
+          <option>Vegetables</option>
+          <option>Others</option>
+        </select>
+      </div>
+
+
+      <div class="col-md-12">
+        <div class="radio">
+          <label>
+            <input type="radio" name="gender" value="green" checked> Green
+            <br>
+            <input type="radio" name="gender" value="red"> Red
+            <br>
+            <input type="radio" name="gender" value="yellow"> Yellow
+          </label>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="apple" value="Granny Smith">Granny Smith
+            <br>
+            <input type="checkbox" name="apple" value="Gala">Gala
+          </label>
+        </div>
+      </div>
+
+
+      <div class="col-md-12">
+        <button id="myButton" type="submit" class="btn btn-default">Order Now</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/takeAnOrder.js"></script>
+
+</body>
+
+</html>
