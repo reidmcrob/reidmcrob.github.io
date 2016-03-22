@@ -11,7 +11,7 @@ $(document).ready(function(){
     '<img src="'+item.image+'"/>';
 
     //do some stuff
-    html+= '</div>'
+    html+= '</div>';
 
     })//each cat
     $("#catData").append(html);
