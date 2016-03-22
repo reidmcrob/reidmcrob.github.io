@@ -38,7 +38,7 @@
   "type": "Siamese",
   "name": "Robert",
   "gender": "Female",
-  "image": "images.cat3.jpg",
+  "image": "images/cat3.jpg",
   "comments": [{
     "username": "kittykat33",
     "stars": 5,

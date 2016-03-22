@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $.getJSON("jsonDatabase/cat.json",function(data){
+  $.getJSON("jsonDatabase/jsonCats.json",function(data){
     console.dir(data);
     var html="";
     $.each(data,function(index, item){
