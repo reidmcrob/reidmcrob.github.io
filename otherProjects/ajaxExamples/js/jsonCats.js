@@ -4,7 +4,7 @@ $(document).ready(function(){
     console.dir(data);
     var html="";
     $.each(data,function(index, item){
-    html += '<div class="col-md-4 cat">' +
+    html += '<div class="col-md-4">' +
     '<div class= "catName"> ' +item.name+ '</div>'+
     '<div class= "catType">' +item.type+ '</div>'+
     '<div class= "catGender">' +item.gender+ '</div>'+
@@ -14,7 +14,7 @@ $(document).ready(function(){
     html+= '</div>'
 
     })//each cat
-    @("#catData").append(html);
+    $("#catData").append(html);
   })
 })
 /*
