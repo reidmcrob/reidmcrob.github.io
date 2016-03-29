@@ -1,1 +1,26 @@
 /**/
+  .carousel {
+    background: #345860;
+  }
+
+  .carousel .item img {
+    margin: 0 auto;
+  }
+
+  .bs-example {
+    margin: 20px;
+  }
+
+  .catImage {
+    width: 100%;
+}
+  h1{
+      text-align: center;
+      font-weight: bold;
+    }
+
+  small{
+    font-weight: bold;
+  }
+
+  

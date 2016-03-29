@@ -1,0 +1,55 @@
+[{
+  "type": "Calico",
+  "name": "Paws",
+  "gender": "Male",
+  "image": "images/cat1.jpg",
+  "comments": [{
+    "username": "kinderlover22993",
+    "stars": 5,
+    "comment": "I LOOOOVE this cat!!"
+  }, {
+    "username": "natcole",
+    "stars": 2.5,
+    "comment": "Super cute, but so much energy..."
+  }, {
+    "username": "CatLover454",
+    "stars": 3,
+    "comment": "Any cat is cute but this one is too much."
+  }]
+}, {
+  "type": "Tabby",
+  "name": "Mittens",
+  "gender": "Female",
+  "image": "images/cat2.jpg",
+  "comments": [{
+    "username": "CatLover454",
+    "stars": 5,
+    "comment": "PURRRFECT cat!"
+  }, {
+    "username": "FacePriceless",
+    "stars": 4,
+    "comment": "Love her :)"
+  }, {
+    "username": "Ihateu",
+    "stars": 2,
+    "comment": "She was alright."
+  }]
+}, {
+  "type": "Siamese",
+  "name": "Robert",
+  "gender": "Female",
+  "image": "images/cat3.jpg",
+  "comments": [{
+    "username": "kittykat33",
+    "stars": 5,
+    "comment": "She was super cute, defs need to change her name..."
+  }, {
+    "username": "AboveAlpha",
+    "stars": 1,
+    "comment": "destroyed my house."
+  }, {
+    "username": "SweetPrincess",
+    "stars": 5,
+    "comment": "<3<3<3<3 so much love"
+  }]
+}]
