@@ -2,6 +2,8 @@ $(document).ready(function() {
 
   $(".nav").find("li").on("click", function() {
 
+    $("#pageContent").hide().html("");
+
     $(".nav").find("li").removeClass("active");
     $(this).addClass("active");
     var page = $(this).attr("id");
@@ -14,27 +16,26 @@ $(document).ready(function() {
       $.get("partials/home.html", function(data) {
         $("#pageContent").html(data);
         $('.carousel').carousel();
-
-
       })
+
     } else if (partial == "whatPage") {
 
       $.getJSON("jsonDatabase/finalProject.json",function(data){
-        console.dir(data);
+        //console.dir(data);
         var html="";
         $.each(data,function(index, item){
-        html += '<div class="col-md-4">' +
+        html += '<div class="col-xs-12 col-md-4 jsonCats">' +
         '<div class= "catName"> <small>Name:</small> ' +item.name+ '</div>'+
         '<div class= "catType"> <small>Type:</small> ' +item.type+ '</div>'+
         '<div class= "catGender"> <small>Gender:</small> ' +item.gender+ '</div>'+
         '<img class=catImage src="'+item.image+'"/>'+
-        '<div class="commentContainer">';
+        //'<div class="commentContainer">';
         $.each(item.comments, function(ind, i){
-          html+= '<div class="renterName">' +i.username+ '</div>'+
+          html+= '<div class="renterName"><small>' +i.username+ '</small></div>'+
                   '<div class="renterComment">' +i.comment+ '</div>'+
                   '<div class="renterStars">';
 
-                  var numStars = Number(i.stars);
+                  //var numStars = Number(i.stars);
 
                   for(var i=1; i<=5; i++){
                     if(i<= numStars){
@@ -57,7 +58,7 @@ $(document).ready(function() {
       })
 
     } else if (partial == "elsePage") {
-      $.get("partials/order.html", function(data) {
+      $.get("partials/order2.html", function(data) {
         $("#pageContent").html(data);
         //put in js
         $("#myButton").on("mouseenter", function() {
