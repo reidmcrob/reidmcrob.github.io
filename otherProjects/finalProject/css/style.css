@@ -1,19 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
 
 .catImage{
 
   width:100%;
-  border: 2pxs solid #EDDE45;
+  border: 2px solid ##EA3556;
 }
 
 .catName{
-  background:#EDDE45;
+  background:#EA3556;
   font-size:18px;
   text-align: center;
 }
-
+.nav-pills{
+  font-family: "comfortaa";
+  color: #EDDE45;
+}
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
   background-color: #EA3556;
+  font-family: "comfortaa";
 }
 
 .pageContent{
@@ -27,8 +32,29 @@ small{
 h1{
   font-size: 55px;
   text-align: center;
+  font-weight: bold;
   font-family: "comfortaa";
-  margin-bottom: 45px;
+  margin-bottom: 10px;
+  color: #ED146F
+}
+
+
+h2{
+
+  font-size: 22px;
+  text-align: center;
+  font-family: "open sans";
+  font-weight: 600;
+}
+
+p{
+  font-size: 14px;
+  font-family: "open sans";
+  font-weight: 400;
+  text-align: center;
+  margin-left: 45px;
+  margin-right: 45px;
+  border: 2px solid ##EA3556;
 }
 
 body{
@@ -36,7 +62,8 @@ body{
 }
 
   .carousel {
-    background: #FFF;
+    background: #EDE5E2;
+
   }
 
   .carousel .item img {
@@ -45,13 +72,4 @@ body{
 
   .bs-example {
     margin: 20px;
-  }
-
-  h1{
-      text-align: center;
-      font-weight: bold;
-    }
-
-  small{
-    font-weight: bold;
   }
