@@ -52,22 +52,4 @@
     "stars": 5,
     "comment": "<3<3<3<3 love this flav so much"
   }]
-  }, {
-    "type": "Pink Gummy Bear",
-    "name": "Watermelon Gummy Bear",
-    "price": "$3.99",
-    "image": "images/gummybearpink.jpg",
-    "comments": [{
-      "username": "Kissez223",
-      "stars": 4,
-      "comment": "I Love Watermelon."
-    }, {
-      "username": "AboveAlpha",
-      "stars": 4,
-      "comment": "Better than the green one."
-    }, {
-      "username": "PeaGirl",
-      "stars": 2,
-      "comment": "I didnt love it."
-    }]
 }]
