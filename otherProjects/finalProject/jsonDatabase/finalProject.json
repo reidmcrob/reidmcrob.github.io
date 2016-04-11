@@ -1,55 +1,73 @@
 [{
-  "type": "Calico",
-  "name": "Paws",
-  "gender": "Male",
-  "image": "images/cat1.jpg",
+  "type": "Red Gummy Bear",
+  "name": "Raspberry-Lemon Gummy Bear",
+  "price": "$3.99",
+  "image": "images/gummybearred.jpg",
   "comments": [{
-    "username": "kinderlover22993",
+    "username": "xoxoMelly",
     "stars": 5,
-    "comment": "I LOOOOVE this cat!!"
+    "comment": "The flavour is amazing! I got the double order of only this flavour and I snacked on it for days!"
   }, {
     "username": "natcole",
     "stars": 2.5,
-    "comment": "Super cute, but so much energy..."
+    "comment": "Super yummy, but they were a little stale..."
   }, {
-    "username": "CatLover454",
+    "username": "GummyRater433",
     "stars": 3,
-    "comment": "Any cat is cute but this one is too much."
+    "comment": "Not bad, but I have had better."
   }]
 }, {
-  "type": "Tabby",
-  "name": "Mittens",
-  "gender": "Female",
-  "image": "images/cat2.jpg",
+  "type": "Yellow Gummy Bear",
+  "name": "Banana-Strawberry Gummy Bear",
+  "price": "$4.99",
+  "image": "images/gummybearyellow.jpg",
   "comments": [{
     "username": "CatLover454",
     "stars": 5,
-    "comment": "PURRRFECT cat!"
+    "comment": "PURRRFECT flavour!"
   }, {
     "username": "FacePriceless",
     "stars": 4,
-    "comment": "Love her :)"
+    "comment": "Very yummy, I can tell they have been wokring on this for ten years :)"
   }, {
-    "username": "Ihateu",
+    "username": "2moody4u",
     "stars": 2,
-    "comment": "She was alright."
+    "comment": "Nothing special."
   }]
 }, {
-  "type": "Siamese",
-  "name": "Robert",
-  "gender": "Female",
-  "image": "images/cat3.jpg",
+  "type": "Green Gummy Bear",
+  "name": "Green-Jello Gummy Bear",
+  "price": "$3.99",
+  "image": "images/gummybeargreen.jpg",
   "comments": [{
-    "username": "kittykat33",
-    "stars": 5,
-    "comment": "She was super cute, defs need to change her name..."
+    "username": "RiserofH",
+    "stars": 1,
+    "comment": "Disgusting..."
   }, {
     "username": "AboveAlpha",
-    "stars": 1,
-    "comment": "destroyed my house."
+    "stars": 3,
+    "comment": "Pretty good I guess."
   }, {
     "username": "SweetPrincess",
     "stars": 5,
-    "comment": "<3<3<3<3 so much love"
+    "comment": "<3<3<3<3 love this flav so much"
   }]
+  }, {
+    "type": "Pink Gummy Bear",
+    "name": "Watermelon Gummy Bear",
+    "price": "$3.99",
+    "image": "images/gummybearpink.jpg",
+    "comments": [{
+      "username": "Kissez223",
+      "stars": 4,
+      "comment": "I Love Watermelon."
+    }, {
+      "username": "AboveAlpha",
+      "stars": 4,
+      "comment": "Better than the green one."
+    }, {
+      "username": "PeaGirl",
+      "stars": 2,
+      "comment": "I didnt love it."
+    }]
 }]
