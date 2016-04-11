@@ -59,7 +59,88 @@ $(document).ready(function() {
 
     } else if (partial == "elsePage") {
       $.get("partials/order2.html", function(data) {
+
         $("#pageContent").html(data);
+
+        $('#startRentDate, #endRentDate').datepicker({});
+
+        $("#submitButton").on("click",function(){
+
+                   $("input, select").filter(function() {
+
+                  return !this.value;
+
+                }).closest("div").addClass("has-error");
+
+                //remove error class for non empty ones
+
+                $("input, select").filter(function() {
+
+                  return this.value; //removed !
+
+                }).closest("div").removeClass("has-error");
+                var errors = $(".has-error");
+                if (errors.length < 1) {
+                  //alert("no errors");
+                  sendConfirmation();
+
+                }
+        })
+
+        $("#cvvCode").on("focus", function(){
+          $(this).css("background-color","#dbc9ff");
+
+        })
+
+        .on('blur', function(){
+          $(this).css("background-color", "#FFF");
+
+        });
+
+        $("#submitButton").on("mouseenter", function(){
+
+          $(this).text("Get Eating");
+
+        })
+
+        .on("mouseleave", function(){
+          $(this).text("Order Now");
+
+        });
+
+      })
+
+    }
+
+
+    $("#pageContent").fadeIn();
+
+  }
+
+   function sendConfirmation() {
+      //make an object to record data for database;
+      var order = {};
+      //get all teh jquery objects
+      var formData = $("input, select");
+      //for each jquery object
+      formData.each(function() {
+        var id = $(this).attr("id"); //get the id of the element
+        order[id] = $(this).val(); //set the field and the value
+      })
+      alert("Sending to database " + JSON.stringify(order));
+      $("#successMsg").html("Order Received!<br/><br/>" +
+        order.catSelect + " will be delivered on " +
+        order.endRentDate +
+        "<img id='gummybear' src='images/thankyou.png'>");
+
+    } //sendConfirmation
+    //begin the program, get the homepage
+
+    getPartial("homePage");
+
+  }) //ready
+
+  /*
         //put in js
         $("#myButton").on("mouseenter", function() {
             $("#log").append("<br> Mouse Enter")
