@@ -37,8 +37,8 @@ $(document).ready(function() {
 
                   //var numStars = Number(i.stars);
 
-                  for(var i=1; i<=5; i++){
-                    if(i<= numStars){
+                  for(var j=1; j<=5; j++){
+                    if(j<= i.stars){
                       html+='<img src="images/fullstar.png"/>';
                     }
                     else{
