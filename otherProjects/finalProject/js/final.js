@@ -25,9 +25,7 @@ $(document).ready(function() {
         var html="";
         $.each(data,function(index, item){
         html += '<div class="col-xs-12 col-md-4 jsonCats">' +
-        '<div class= "catName"> <small>Name:</small> ' +item.name+ '</div>'+
-        '<div class= "catType"> <small>Type:</small> ' +item.type+ '</div>'+
-        '<div class= "catGender"> <small>Gender:</small> ' +item.gender+ '</div>'+
+        '<div class= "catName"> <small></small> ' +item.name+ '</div>'+
         '<img class=catImage src="'+item.image+'"/>'+
         //'<div class="commentContainer">';
         $.each(item.comments, function(ind, i){
