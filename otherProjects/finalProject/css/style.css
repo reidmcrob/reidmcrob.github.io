@@ -1,6 +1,42 @@
-/**/
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,300,700);
+
+.catImage{
+
+  width:100%;
+  border: 2pxs solid #EDDE45;
+}
+
+.catName{
+  background:#EDDE45;
+  font-size:18px;
+  text-align: center;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  background-color: #EA3556;
+}
+
+.pageContent{
+
+  font-family: "comfortaa";
+}
+small{
+  font-weight: bold;
+}
+
+h1{
+  font-size: 55px;
+  text-align: center;
+  font-family: "comfortaa";
+  margin-bottom: 45px;
+}
+
+body{
+  background-color: #EDE5E2;
+}
+
   .carousel {
-    background: #345860;
+    background: #FFF;
   }
 
   .carousel .item img {
@@ -11,9 +47,6 @@
     margin: 20px;
   }
 
-  .catImage {
-    width: 100%;
-}
   h1{
       text-align: center;
       font-weight: bold;
@@ -22,5 +55,3 @@
   small{
     font-weight: bold;
   }
-
-  
