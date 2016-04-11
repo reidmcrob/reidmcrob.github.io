@@ -1,7 +1,7 @@
 [{
   "type": "Red Gummy Bear",
   "name": "Raspberry-Lemon Gummy Bear",
-  "price": "$3.99",
+  "gender": "$3.99",
   "image": "images/gummybearred.jpg",
   "comments": [{
     "username": "xoxoMelly",
@@ -19,7 +19,7 @@
 }, {
   "type": "Yellow Gummy Bear",
   "name": "Banana-Strawberry Gummy Bear",
-  "price": "$4.99",
+  "gender": "$4.99",
   "image": "images/gummybearyellow.jpg",
   "comments": [{
     "username": "CatLover454",
@@ -37,7 +37,7 @@
 }, {
   "type": "Green Gummy Bear",
   "name": "Green-Jello Gummy Bear",
-  "price": "$3.99",
+  "gender": "$3.99",
   "image": "images/gummybeargreen.jpg",
   "comments": [{
     "username": "RiserofH",
