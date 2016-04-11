@@ -132,8 +132,7 @@ $(document).ready(function() {
         order.catSelect + " will be delivered on " +
         order.endRentDate +
         "<img id='gummybear' src='images/thankyou.png'>");
-
-    } //sendConfirmation
+    }
     //begin the program, get the homepage
 
     getPartial("homePage");
