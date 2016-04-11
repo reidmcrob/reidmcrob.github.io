@@ -20,13 +20,13 @@ $(document).ready(function() {
 
     } else if (partial == "whatPage") {
 
-      $.getJSON("jsonDatabase/finalProject.json",function(data){
+      $.getJSON("jsonDatabase/finalProject.json", function(data){
         //console.dir(data);
         var html="";
         $.each(data,function(index, item){
         html += '<div class="col-xs-12 col-md-4 jsonCats">' +
         '<div class= "catName"> <small></small> ' +item.name+ '</div>'+
-        '<img class=catImage src="'+item.image+'"/>'+
+        '<img class="catImage" src="'+item.image+'"/>'+
         //'<div class="commentContainer">';
         $.each(item.comments, function(ind, i){
           html+= '<div class="renterName"><small>' +i.username+ '</small></div>'+
@@ -60,7 +60,7 @@ $(document).ready(function() {
 
         $("#pageContent").html(data);
 
-        $('#startRentDate, #endRentDate').datepicker({});
+        $('#endRentDate').datepicker({});
 
         $("#submitButton").on("click",function(){
 
@@ -105,11 +105,8 @@ $(document).ready(function() {
           $(this).text("Order Now");
 
         });
-
       })
-
     }
-
 
     $("#pageContent").fadeIn();
 
@@ -118,7 +115,7 @@ $(document).ready(function() {
    function sendConfirmation() {
       //make an object to record data for database;
       var order = {};
-      //get all teh jquery objects
+      //get all the jquery objects
       var formData = $("input, select");
       //for each jquery object
       formData.each(function() {
