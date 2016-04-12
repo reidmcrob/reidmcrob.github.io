@@ -133,7 +133,18 @@
     <input type="text" class="form-control" id="country">
   </div>
 
-  <div class="col-xs-12 col-md-12">
+  <div class="col-xs-12 col-md-6">
+    <label class="control-label">
+    Card Type
+    </label>
+    <form action="">
+  <input type="radio" name="card" value="MasterCard"> MasterCard <br>
+  <input type="radio" name="card" value="Visa"> Visa<br>
+  <input type="radio" name="card" value="American Express"> American Express<br>
+  </form>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
     <label class="control-label">
       Shipping Type
     </label>
@@ -141,10 +152,9 @@
   <input type="radio" name="ship" value="Free"> Standard FedEx Canada - Free <br>
   <input type="radio" name="ship" value="Express">  Express FedEx Canada - $10.00<br>
   <input type="radio" name="ship" value="Priority"> Priority FedEx Canada - $15.00<br>
-    <input type="radio" name="ship" value="States"> Standard United States Shipping - $30.00<br>
+    <input type="radio" name="ship" value="States"> Standard United States - $30.00<br>
 </form>
 </div>
-
 
   <div class="col-md-12">
     <button id="submitButton" class="btn btn-success">

@@ -96,3 +96,9 @@ body{
     font-family: "open sans";
     font-weight: 400;
   }
+
+  #submitButton {
+  margin-top: 20px;
+  text-align: center;
+  background: #ED146F;
+}
