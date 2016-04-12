@@ -28,10 +28,13 @@ $(document).ready(function() {
         '<div class= "catName"> <small></small> ' +item.name+ '</div>'+
         '<img class="catImage" src="'+item.image+'"/>'+
         //'<div class="commentContainer">';
+        '<div class="panel panel-default">' + //added
+        '<div class="panel-heading">Reviews</div>';
         $.each(item.comments, function(ind, i){
-          html+= '<div class="renterName"><small>' +i.username+ '</small></div>'+
-                  '<div class="renterComment">' +i.comment+ '</div>'+
-                  '<div class="renterStars">';
+          html += '<div class="panel-body">' + //added
+            '<div class="renterName"><small>' + i.username + '</small></div>' +
+            '<div class="renterComment">' + i.comment + '</div>' +
+            '<div class="renterStars">';
 
                   //var numStars = Number(i.stars);
 
